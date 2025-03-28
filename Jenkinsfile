@@ -16,7 +16,7 @@ pipeline {
         stage('Build and Package') {
             steps {
                 // Run Maven clean, install, and package in one step
-               sh  '/usr/bin/mvn clean install package'
+               sh  'mvn clean install package'
             }
         }
 
